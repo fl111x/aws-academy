@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Chewy", sans-serif;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #a6d1ff;
+  height: 60px;
+  align-content: center;
+  width: 100%;
+  z-index: 1000; /* Memastikan navbar berada di atas elemen lain */
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.content-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+img {
+  width: 200px;
+}
+
+article {
+  text-align: justify;
+  width: 500px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+aside {
+  margin-right: 30px;
+}
+
+.about-me {
+  padding-top: 0px;
+}
+
+.about-me img {
+  width: 300px;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body p {
+  text-align: center;
+}
+
+.card-footer a {
+  color: blue;
+}
+
+.contact-me {
+  background-color: black;
+}
+
+footer {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  font-size: large;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
